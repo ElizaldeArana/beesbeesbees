@@ -4,11 +4,11 @@ var ForagerBee = function() {
   this.job = 'find pollen'
   this.canFly = true;
   this.treasureChest = [];
-
-  ForagerBee.prototype.forage = function(treasure) {
-    this.treasureChest.push(treasure);
-  }
 };
 
 ForagerBee.prototype = Object.create(HoneyMakerBee.prototype);
 ForagerBee.prototype.constructor = ForagerBee;
+
+  ForagerBee.prototype.forage = function(treasure) {
+    this.treasureChest.push(treasure);
+  }
